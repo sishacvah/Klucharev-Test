@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Оценка привлекательности</title>
+</head>
+<body background="assets/images/back.png">
+
+	<div id="myModal" class="modal">
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="close">&times;</span>
+	    <h3 id="modalHeader">Оценка привлекательности</h3>
+	    <p id="modalText">Согласно исследованиям, большинство людей оценивает привлекательность лиц одинакого. Оцените привлекательность девушек по фотографиям из настоящего научного исследования. Если ваше мнение совпадет с общественным, то оно окрасится зеленым. Если расхождение составит 2 очка - желтым. Больше 2-х - красным.</p>
+	  </div>
+	</div>
+
+	<div id="main">
+		<div id="game">
+			<h4>Выставляйте оценку привлекательности ползунком, затем жмите Сравнить!</h4>
+			<div id="imageContainer">
+				<img id="image" src="assets/images/image1.jpg">
+			</div>
+			<div id="slideContainer">
+				<img class="thumbs" src="assets/down.png">
+				<input type="range" id="slider" min="1" max="8" value="4">
+				<img class="thumbs" src="assets/up.png">
+			</div>
+			<div id="valueContainer">
+				<div>
+					<p id="playerValue"></p>
+				</div>
+				<div>
+					<p id="groupValue"></p>
+				</div>
+			</div>
+			<div id="buttonContainer">
+				<button class="button" id="compareButton" type="button" onclick="compare()">Сравнить!</button>
+				<button class="button" id="nextButton" type="button" onclick="next()">Дальше!</button>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>

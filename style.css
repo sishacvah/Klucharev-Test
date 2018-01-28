@@ -1,0 +1,198 @@
+#main {
+    background-color: #7f9c96;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    min-width: 650px;
+    max-width: 650px;
+    border-radius: 2px;
+    padding: 25px 25px 24px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5);
+    vertical-align: baseline;
+}
+
+#slideContainer {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* The slider itself */
+#slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 50%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #1b4079; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+
+#slider:hover {
+    opacity: 1; 
+}
+
+/* The slider handle (use webkit (Chrome, Opera, Safari, Edge) and moz (Firefox) to override default look) */
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: white; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+#slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: white; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+#valueContainer {
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#playerValue {
+    margin: auto;
+    width: 70px;
+    border: solid 2px;
+    border-color: white;
+    font-size: 40px;
+    display: inline;
+    color: white;
+}
+
+#groupValue {
+    margin: auto;
+    margin-left: 10px;
+    width: 70px;
+    border: solid 2px;
+    border-color: white;
+    font-size: 40px;
+    display: inline;
+    color: white;
+    opacity: 0;
+}
+
+.button {
+  background-color: #52ad3e; /* Green */
+    border: 2px solid #e7e7e7;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #72ef56;
+}
+
+.button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+#buttonContainer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#imageContainer {
+    
+    margin: auto;
+}
+
+#image {
+    margin: auto;
+    display: flex;
+    width: 350px;
+    height: 450px;
+    border: 2px solid #1b4079;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5);
+}
+
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+#modalHeader {
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.thumbs {
+    width: 30px;
+    height: 30px;
+}
+
+a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
