@@ -1,5 +1,9 @@
+body {
+    background-repeat: repeat;
+}
+
 #main {
-    background-color: #7f9c96;
+    background-color: #9eb9c1;
     margin-right: auto;
     margin-left: auto;
     margin-top: auto;
@@ -72,10 +76,10 @@
     margin: auto;
     width: 70px;
     border: solid 2px;
-    border-color: white;
+    border-color: #071223;
     font-size: 40px;
     display: inline;
-    color: white;
+    color: #071223;
 }
 
 #groupValue {
@@ -86,12 +90,12 @@
     border-color: white;
     font-size: 40px;
     display: inline;
-    color: white;
+    color: #071223;
     opacity: 0;
 }
 
 .button {
-  background-color: #52ad3e; /* Green */
+  background-color: #2b9681; /* Green */
     border: 2px solid #e7e7e7;
     color: black;
     padding: 16px 32px;
@@ -106,7 +110,7 @@
 }
 
 .button:hover {
-    background-color: #72ef56;
+    background-color: #40ddbe;
 }
 
 .button:disabled {
